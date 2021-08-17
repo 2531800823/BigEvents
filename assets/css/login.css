@@ -16,7 +16,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-} 
+}
 
 .title-box {
     height: 60px;
@@ -28,7 +28,6 @@ body {
 }
 
 .layui-form {
-    padding: 0 30px;
     padding: 0 30px;
 }
 

@@ -24,10 +24,10 @@ function getUserInfo(){
                 return layer.msg('获取用户信息失败');
             // 渲染用户头像
             renderAvatar(res.data);
-            console.log(res);
         },
         
     })
+    
 }
 
 // 渲染用户头像
@@ -39,12 +39,11 @@ function renderAvatar(user) {
 
     // 渲染用户头像
     if (user.user_pic !== null) {
-        $('.layui-nav-img').attr('sec', user.user_pic).show();
+        $('.layui-nav-img').attr('src', user.user_pic).show();
         $('.text-avatar').hide();
     } else {
         $('.layui-nav-img').hide();
         var first = name[0].toUpperCase();
-        console.log(first);
         $('.text-avatar').html(first);
     }
 }
